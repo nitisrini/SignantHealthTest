@@ -33,8 +33,11 @@ pip install Faker
 
 ## Project Structure
 * **Features**
-  * *Steps* - Contains step-definition files
-  * *Feature files and Behave hooks* - Contains user registration, validate user information and update user information test cases
+  * **TS1_UserRegistrationAndValidation.feature** - Contains user registration test case
+  * **TS2_UserLoginAndValidation.feature** - Contains validate user information test case
+  * **TS3_UserUpdationAndValidation.feature** - Contains update user information test case
+  * **Steps** - Contains step-definition files
+  * **environment.py** - Behave hooks
 
 * **Utils**
   * *Configuration and Properties file*
@@ -52,12 +55,20 @@ Execute the test through batch file
 From the project directory, execute the following command to use default values,
 
 *`behave --no-capture .\Features\`*
+
+*Or*
+
+From the project directory, execute the following command to use default values and tags,
+
+*`behave --no-capture --tags=@all .\Features\`*
+
+Available tags are '_user_registration_', '_user_login_', '_update_user_' and '_all_'
   
 *Or*
 
 From the project directory, execute the following to use custom url,
 
-*`behave --no-capture .\Features\ -D baseuri='http://localhost:8080'`*
+*`behave --no-capture --tags=@all .\Features\ -D baseuri='http://localhost:8080'`*
 
 ## Reports
 Default report is not available for this test. To see the allure reports, follow the below instructions,

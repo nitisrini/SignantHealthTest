@@ -1,5 +1,6 @@
-Resources/CustomLibraries/__pycache__/
+**/__pycache__/
 *.html
 *.xml
 *.log
 *.png
+/.idea

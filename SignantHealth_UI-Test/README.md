@@ -30,15 +30,15 @@ pip install Faker
 
 ## Project Structure
 * **TestSuites**
-  * *Suite 1* - Contains user registration test case
-  * *Suite 2* - Contains user login test case
+  * **TS_1_User_Registration.robot** - Contains user registration test case
+  * **TS_2_User_Login.robot** - Contains user login test case
 
 * **Resources**
-  * *CustomLibraries* - Python library files to generate random user information
-  * *Drivers*         - Standalone browser drivers (Chrome, Firefox)
-  * *PageLocators*    - All the page related element locator values
-  * *PageObjects*     - Actions to be perform on each pages
-  * *Utils*           - Common methods and global variables
+  * **CustomLibraries** - Python library files to generate random user information
+  * **Drivers**         - Standalone browser drivers (Chrome, Firefox)
+  * **PageLocators**    - All the page related element locator values
+  * **PageObjects**     - Actions to perform on each pages
+  * **Utils**           - Common methods and global variables
   
 ## How to execute the test
 Execute the test through batch file 
@@ -50,12 +50,20 @@ Execute the test through batch file
 From the project directory, execute the following command to use default values,
 
 *`robot .\TestSuites\`*
-  
+
+*Or*
+
+From the project directory, execute the following command to use default values with tags,
+
+*`robot -i all .\TestSuites\`*
+
+Available tags are '_user_registration_', '_user_login_' and '_all_'
+
 *Or*
 
 From the project directory, execute the following to use custom url and browser values,
 
-*`robot -v url:http://localhost:8080 -v browser:Chrome .\TestSuites\`*
+*`robot -i all -v url:http://localhost:8080 -v browser:Chrome .\TestSuites\`*
 
 Supporting browser values are *Chrome* and *Firefox*
 

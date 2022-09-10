@@ -16,11 +16,15 @@ Test Setup  Open the page
 
 *** Test Cases ***
 Review my own user information from the main view
-    header_page.Click login link
+    [Tags]  user_login  all
+    header_page.Click registration link
+    registration_page.Fill user details
+    Sleep    1s     To see the entered values
+    registration_page.Click register button and validate user is registered successfully
     login_page.Enter username and password
-#    Sleep    2s     To see the entered values
+    Sleep    1s     To see the entered values
     login_page.Click login button and validate user is logged in successfully
     user_information_page.Validate user information
-#    Sleep    2s     To see the entered values
+    Sleep    1s     To see the entered values
     header_page.Click logout link
 

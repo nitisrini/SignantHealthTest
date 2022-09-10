@@ -16,7 +16,8 @@ Test Setup  Open the page
 
 *** Test Cases ***
 Register through web portal
+    [Tags]  user_registration   all
     header_page.Click registration link
     registration_page.Fill user details
-#    Sleep    2s     To see the entered values
+    Sleep    1s     To see the entered values
     registration_page.Click register button and validate user is registered successfully

@@ -8,8 +8,10 @@ Version used to create this test is,
   Python 3.10.2
   pip 21.2.4
 ```
-And keep the flask application running before executing the test
-## Installations required to execute this test
+And keep the flask application running before executing the test. [Refer](https://github.com/sh-rdtaci/Flasky)
+## Installation Instructions
+Please install the below requirements to execute this test.
+
 Install Robot framework
 ```bash
 pip install robotframework
@@ -56,3 +58,16 @@ From the project directory, execute the following to use custom url and browser 
 *`robot -v url:http://localhost:8080 -v browser:Chrome .\TestSuites\`*
 
 Supporting browser values are *Chrome* and *Firefox*
+
+## Reports
+Once execution is completed, default report can be found at the project directory as `report.html` `log.html`
+
+## Software Versions used
+
+* *OS*  - Windows 11 Pro
+* *Chrome browser*  - 105.0.5195.102
+* *Chromedriver* - 105.0.5195.52
+* *Firefox browser* - 104.0.2
+* *Geckodriver* - v0.31.0-win64
+* *IDE* - PyCharm 2022.2.1 (Community Edition)
+

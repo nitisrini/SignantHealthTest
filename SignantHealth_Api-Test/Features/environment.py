@@ -12,7 +12,7 @@ def before_all(context):
     context.api_dict = {}
     context.configs = ReadConfigs()
 
-    context.base_uri = context.configs.read_config_value('Base', 'Uri')
+    context.base_uri = context.config.userdata['baseuri'] if 'baseuri' in context.config.userdata else context.configs.read_config_value('Base', 'Uri')
 
 
 def before_scenario(context, scenario):

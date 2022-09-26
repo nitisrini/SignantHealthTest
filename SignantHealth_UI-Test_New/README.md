@@ -27,6 +27,10 @@ Install Faker library to generate random values
 ```bash
 pip install Faker
 ```
+Install WebdriverManager library to use browser drivers
+```bash
+pip install webdrivermanager
+```
 
 ## Project Structure
 * **TestSuites**

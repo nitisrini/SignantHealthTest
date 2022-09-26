@@ -1,0 +1,6 @@
+**/__pycache__/
+*.html
+*.xml
+*.log
+*.png
+/.idea

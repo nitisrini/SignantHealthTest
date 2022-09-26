@@ -1,0 +1,8 @@
+version: "3"
+services:
+    flask:
+        image: nitisrini/flasky-repo
+    uitest:
+        image: nitisrini/signant-health-ui-repo
+        depends_on:
+        - flask
